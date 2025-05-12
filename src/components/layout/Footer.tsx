@@ -39,13 +39,13 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-lg font-semibold mb-4">Contact</h3>
+            <h3 className="text-lg font-semibold mb-4">Contact US</h3>
             <ul className="space-y-2">
-              <li className="text-foreground/70 text-sm">
+              <li className="text-foreground/70 text-sm cursor-pointer">
                 Email: info@ecothreads.com
               </li>
-              <li className="text-foreground/70 text-sm">
-                Location: Sustainable Fashion District, NY
+              <li className="text-foreground/70 text-sm cursor-pointer">
+                Location: Sustainable Fashion District, Pune
               </li>
             </ul>
           </div>

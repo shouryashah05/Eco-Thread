@@ -79,11 +79,11 @@ const Globe: React.FC<GlobeProps> = ({ showStats = false }) => {
   }, []);
 
   const wasteStatPoints: WasteStatPoint[] = [
-    { position: [0, 2, 0], name: "North America", value: "37M tons annually", color: "#4361ee" },
-    { position: [1.5, 0.8, 1], name: "Europe", value: "42M tons annually", color: "#f72585" },
-    { position: [-1.5, 0.5, 1], name: "Asia", value: "92M tons annually", color: "#4cc9f0" },
-    { position: [0, -1.8, 1], name: "Australia", value: "15M tons annually", color: "#7209b7" },
-    { position: [-0.8, -0.5, 1.8], name: "South America", value: "28M tons annually", color: "#4cc9f0" },
+    { position: [0, 2, 0], name: "North America", value: "17M tons annually", color: "#4361ee" },
+    { position: [1.5, 0.8, 1], name: "Europe", value: "7M tons annually", color: "#f72585" },
+    { position: [-1.5, 0.5, 1], name: "Asia", value: "64M tons annually", color: "#4cc9f0" },
+    { position: [0, -1.8, 1], name: "Australia", value: "1.2M tons annually", color: "#7209b7" },
+    { position: [-0.8, -0.5, 1.8], name: "South America", value: "3M tons annually", color: "#4cc9f0" },
   ];
 
   return (
@@ -147,7 +147,7 @@ const Globe: React.FC<GlobeProps> = ({ showStats = false }) => {
             ))}
           </ul>
           <div className="mt-4 pt-3 border-t border-white/10">
-            <p className="text-xs text-foreground/70">Total annual textile waste: 214M tons</p>
+            <p className="text-xs text-foreground/70">Total annual textile waste: 92M tons</p>
           </div>
         </div>
       )}

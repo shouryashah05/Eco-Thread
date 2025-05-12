@@ -34,15 +34,20 @@ const RecyclingPage: React.FC = () => {
           
           <motion.p 
             variants={fadeIn('down', 0.4)}
-            className="text-foreground/80 text-base md:text-lg mb-8"
+            className="text-foreground/80 text-base md:text-lg mb-6"
           >
             Discover the innovative processes transforming textile waste into valuable resources.
+          </motion.p>
+          <motion.p variants={fadeIn('down', 0.5)}
+            className="text-foreground/60 text-base md:text-medium mb-0"
+            >
+              Textile recycling is the process of recovering fiber, yarn, or fabric and reprocessing the material into useful products. With the rising concerns over environmental sustainability and fast fashion’s impact on waste generation, textile recycling has become a vital practice.
           </motion.p>
         </motion.div>
       </section>
       
       {/* Recycling Methods Section */}
-      <section className="section-container">
+      <section className="section-container -mt-20">
         <SectionTitle
           title="Innovative Recycling Methods"
           subtitle="From mechanical shredding to chemical decomposition, explore the technologies turning old clothes into new treasures."

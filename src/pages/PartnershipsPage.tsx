@@ -18,16 +18,23 @@ const PartnershipsPage: React.FC = () => {
   const [activeCity, setActiveCity] = useState<string | null>(null);
   
   const cities: City[] = [
-    { name: "New York", coordinates: [40.7128, -74.0060], storeCount: 24 },
-    { name: "Los Angeles", coordinates: [34.0522, -118.2437], storeCount: 18 },
-    { name: "Chicago", coordinates: [41.8781, -87.6298], storeCount: 12 },
-    { name: "Miami", coordinates: [25.7617, -80.1918], storeCount: 9 },
-    { name: "San Francisco", coordinates: [37.7749, -122.4194], storeCount: 15 },
-    { name: "Seattle", coordinates: [47.6062, -122.3321], storeCount: 10 },
-    { name: "Boston", coordinates: [42.3601, -71.0589], storeCount: 8 },
-    { name: "Austin", coordinates: [30.2672, -97.7431], storeCount: 7 },
-    { name: "Denver", coordinates: [39.7392, -104.9903], storeCount: 6 },
-    { name: "Portland", coordinates: [45.5051, -122.6750], storeCount: 9 },
+    { name: "Mumbai", coordinates: [40.7128, -74.0060], storeCount: 24 },
+    { name: "Pune", coordinates: [34.0522, -118.2437], storeCount: 13 },
+    { name: "Bangalore", coordinates: [41.8781, -87.6298], storeCount: 28 },
+    { name: "Delhi", coordinates: [25.7617, -80.1918], storeCount: 35 },
+    { name: "Hyderabad", coordinates: [37.7749, -122.4194], storeCount: 15 },
+    { name: "Jaipur", coordinates: [47.6062, -122.3321], storeCount: 10 },
+    { name: "Ahemedabad", coordinates: [42.3601, -71.0589], storeCount: 8 },
+    { name: "Chennai", coordinates: [30.2672, -97.7431], storeCount: 7 },
+    { name: "Kolkata", coordinates: [39.7392, -104.9903], storeCount: 6 },
+    { name: "Indore", coordinates: [45.5051, -122.6750], storeCount: 9 },
+    { name: "Surat", coordinates: [37.7749, -122.4194], storeCount: 5 },
+    { name: "Vadodara", coordinates: [34.0522, -118.2437], storeCount: 4 },
+    { name: "Nagpur", coordinates: [40.7128, -74.0060], storeCount: 3 },
+    { name: "Patna", coordinates: [37.7749, -122.4194], storeCount: 1 },
+    { name: "Lucknow", coordinates: [47.6062, -122.3321], storeCount: 8 },
+    { name: "Nashik", coordinates: [39.7392, -104.9903], storeCount: 4 },
+    { name: "Agra", coordinates: [45.5051, -122.6750], storeCount: 9 },
   ];
   
   const filteredCities = cities.filter(city => 
@@ -154,8 +161,8 @@ const PartnershipsPage: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-radial from-background/0 to-background/70 z-10" />
             
             <img 
-              src="https://images.pexels.com/photos/2422588/pexels-photo-2422588.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-              alt="Map placeholder" 
+              src="https://cdn.pixabay.com/photo/2018/09/07/14/11/city-3660779_1280.jpg"
+              alt="map placeholder" 
               className="absolute inset-0 w-full h-full object-cover"
             />
             
@@ -169,8 +176,8 @@ const PartnershipsPage: React.FC = () => {
                   <p className="text-sm text-foreground/90 mb-3">
                     {cities.find(c => c.name === activeCity)?.storeCount} participating stores in this area
                   </p>
-                  <Button variant="outline" size="sm" className="w-full justify-center">
-                    View Detailed Store List
+                  <Button variant="outline" size="sm" className="w-full justify-center" onClick={() => window.open('https://www.google.com/maps', '_blank')}>
+                   Open in Maps
                   </Button>
                 </div>
               ) : (
@@ -271,7 +278,10 @@ const PartnershipsPage: React.FC = () => {
             <p className="text-foreground/80 text-lg mb-8 max-w-2xl mx-auto">
               Join our network of sustainable fashion partners and contribute to reducing textile waste while attracting eco-conscious consumers.
             </p>
-            <Button variant="primary" size="lg">
+            <Button variant="primary" size="lg" onClick={() => {
+    
+    window.open('https://forms.gle/Q5Z627UgiDn1eKUt9');
+  }}>
               Partner With Us
             </Button>
           </motion.div>
